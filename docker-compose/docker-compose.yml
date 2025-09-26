@@ -4,7 +4,7 @@ services:
     image: jenkins:latest
     ports:
       - "8080:8080"
-      - "50000:50000"
+      - "51000:51000"
     networks:
       - jenkins
     volumes:
@@ -28,7 +28,7 @@ services:
       - jenkins
     environment:
       SONARQUBE_JDBC_USERNAME: sonar
-      SONARQUBE_JDBC_PASSWORD: sonarpasswd
+      SONARQUBE_JDBC_PASSWORD: dH9gkFzpxZqQimFrdehYuA==
       SONARQUBE_JDBC_URL: "jdbc:postgresql://postgres:5432/sonar"
     depends_on: 
       - postgres
